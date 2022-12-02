@@ -146,7 +146,9 @@ Please note that this plugin will create destination table automatically (if not
 			}
 		}
 ```
-## oracle
+## Oracle
+Please note, in order to use oracle you will also need to install Oracle's instant client. To install on alpine follow this Dockerfile:
+https://github.com/Shrinidhikulkarni7/OracleClient_Alpine/blob/master/Dockerfile
 ```json
 		"SQL": {
 			"client": "pg",
