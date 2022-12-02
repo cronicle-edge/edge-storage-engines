@@ -4,7 +4,7 @@
 
 # Custom storage plugins for cronicle
 
-## Instalation
+## Installation
 
 Option 1: \
 Add SQL.js, Sftp.js, Level.js, Lmdb.js under \
