@@ -17,7 +17,9 @@ To avoid touching cronicle installation:
 ```json
 	"Storage": {
 		"engine": "Sftp",
-        "engine_path": "/tmp/edge-storage-engines/Sftp.js"
+                "engine_path": "/tmp/edge-storage-engines/Sftp.js",
+		...
+		},
 ```
 - install dependencies globally. May need to specify NODE_PATH variable, to let node to resolve global packages properly. 
 
@@ -76,7 +78,8 @@ To avoid touching cronicle installation:
 ```
 
 ## SQL 
-Please note that this plugin will create destination automatically table if not exists. To create a table beforehand refer to SQLExamples/DDL.sql to find proper DDL statement.
+Please note that this plugin will create destination table automatically (if not exists). To create the table beforehand refer to SQLExamples/DDL.sql to find proper DDL statement for your DB driver.
+
 ### dependencies
 ```bash
   npm i knex # ORM tool, mandatory
