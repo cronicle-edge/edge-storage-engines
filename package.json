@@ -1,0 +1,20 @@
+{
+  "name": "edge-storage-engines",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Sftp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "knex": "^2.3.0",
+    "level": "^8.0.0",
+    "lmdb": "^2.7.0",
+    "pixl-server": "^1.0.39",
+    "pixl-tools": "^1.0.33",
+    "ssh2-sftp-client": "^9.0.4"
+  }
+}
