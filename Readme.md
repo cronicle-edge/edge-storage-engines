@@ -152,7 +152,7 @@ Please note that this plugin will create destination table automatically (if not
 			"client": "pg",
 			"table": "cronicle",
 			"connection": {
-                "connectString": "(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost...)))",
+                        "connectString": "(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost...)))",
 				"user": "dbUser",
 				"password": "dbPassword",
 				"database": "oracleSchema"
