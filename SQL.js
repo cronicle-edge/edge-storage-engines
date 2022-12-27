@@ -190,7 +190,7 @@ module.exports = class SQLEngine extends Component {
         try {
             let rows = await this.db(this.tableName).where('K', key).select([
                 this.db.raw(`${this.getBlobSizeFn} as len`),
-                this.db.raw('1 as mod')
+                this.db.raw('1 as "mod"')
             ])
             if (rows.length > 0) {
                 callback(null, rows[0]);
