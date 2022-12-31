@@ -84,6 +84,10 @@ module.exports = class SQLEngine extends Component {
             WHEN NOT MATCHED THEN INSERT (K, V) VALUES (s.K, s.V);     
             `
         }
+        
+        if(this.client === 'pg') { // pg treats all cases as lowercase
+           this.getBlobSizeFn = 'length("V")'
+        }
 
         if (this.client === 'oracledb') { // need to pass large blob via variable to avoid "too long" error
             this.mergeStmt = `
