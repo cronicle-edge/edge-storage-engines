@@ -151,7 +151,7 @@ Please note, in order to use oracle you will also need to install Oracle's insta
 https://github.com/Shrinidhikulkarni7/OracleClient_Alpine/blob/master/Dockerfile
 ```json
 		"SQL": {
-			"client": "pg",
+			"client": "oracledb",
 			"table": "cronicle",
 			"connection": {
                         "connectString": "(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost...)))",
